@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/bendaniel10/project-ml-microservice-kubernetes.svg?style=svg)](https://circleci.com/gh/bendaniel10/project-ml-microservice-kubernetes)
 
 ## Project Overview
 
@@ -40,3 +40,13 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+# Edited Project files
+- `app.py` contains the code to handle the prediction. An extra log was added.
+- `Dockerfile` is the file that holds the specification for how we want to package our docker image.
+- `run_docker.sh` Contains the code to test running the app using docker.
+- `run_kubernetes.sh` Contains the code to test running the app when deployed using kubernetes.
+- `upload_docker.sh` Script that builds, tags and uploads our docker image.
+- `output_txt_files/docker_out.txt` Output logs from the docker execution.
+- `output_txt_files/kubernetes_out.txt` Output logs from the kubernetes execution.
+
